@@ -1,2 +1,2 @@
-# CppPracticeProject
-A repo for cpp coding practice.
+## CppPracticeProject
+A repo for c++ language and related tools' learning.
