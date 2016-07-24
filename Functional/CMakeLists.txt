@@ -1,16 +1,16 @@
-SET(LIB_NAME Core)
+SET(LIB_NAME Functional)
 
 set (SOURCES
      "Src/Dummy.cpp")
-set (Include 
-     "Include/Core/TypeTraits.hpp")
+set (FUNCTIONAL 
+     "Include/Delegates.hpp")
 
 source_group("" FILES )
-source_group("Include" FILES ${Include})
+source_group("Include" FILES ${FUNCTIONAL})
 
 include_directories(.)
 
-add_library(${LIB_NAME} STATIC ${SOURCES} ${Include})
+add_library(${LIB_NAME} STATIC ${SOURCES} ${FUNCTIONAL})
 set_target_properties(${LIB_NAME} PROPERTIES LINKER_LANGUAGE CXX)
 
 set_property(TARGET ${LIB_NAME} PROPERTY FOLDER "BaseLibrary")
