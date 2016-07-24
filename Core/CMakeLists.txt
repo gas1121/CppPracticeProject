@@ -14,9 +14,3 @@ add_library(${LIB_NAME} STATIC ${SOURCES} ${Include})
 set_target_properties(${LIB_NAME} PROPERTIES LINKER_LANGUAGE CXX)
 
 set_property(TARGET ${LIB_NAME} PROPERTY FOLDER "BaseLibrary")
-
-#Problem with folder for project files.
-#add_library(${LIB_NAME} INTERFACE)
-#target_include_directories(${LIB_NAME} INTERFACE ...)
-
-#add_custom_target(${LIB_NAME}_ide SOURCES ${SOURCES} ${FUNCTIONAL})
