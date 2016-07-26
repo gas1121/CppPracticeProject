@@ -12,26 +12,15 @@ public:
 
 	explicit StringTraitsTester(const string &str):str_(str) {}
 
-	void Print() { cout << str_ << endl; }
+	void Print() const { cout << str_ << endl; }
 
 private:
 	string str_;
 };
 
-class TestStruct 
-{
-public:
-	static const int a = 0;
-};
-
-void Test(TestStruct test) 
-{
-	cout << TestStruct::a << endl;
-}
-
 int main()
 {
-	Test(TestStruct());
+	TraitsTestFunction<StringTraitsTester>(StringTraitsTester("123"));
 	system("pause");
 	return 0;
 }

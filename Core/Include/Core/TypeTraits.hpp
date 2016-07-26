@@ -12,7 +12,7 @@ namespace CppPractice {
 	template<typename TestObject>
 	void TraitsTestFunction(const TestObject& object)
 	{
-		TraitsTestFunction(object, typename TestTraits::TestTraitsTag);
+		TraitsTestFunction(object, typename TestTraits<TestObject>::TestTraitsTag());
 	}
 
 	template<typename TestObject>
