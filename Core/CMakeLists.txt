@@ -2,8 +2,6 @@ SET(LIB_NAME Core)
 
 set (SOURCES
      "Src/Dummy.cpp")
-set (Include 
-     "Include/Core/TypeTraits.hpp")
 
 source_group("" FILES )
 source_group("Include" FILES ${Include})

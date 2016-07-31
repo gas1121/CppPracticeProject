@@ -8,5 +8,5 @@ message("cxx Flags: " ${CMAKE_CXX_FLAGS})
 
 add_subdirectory(Core)
 add_subdirectory(Functional)
-add_subdirectory(Test)
+add_subdirectory(TypeTraits)
 add_subdirectory(ThirdParty)
