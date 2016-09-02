@@ -1,6 +1,7 @@
 #include "TypeTraits.hpp"
 #include <string>
 #include <iostream>
+#include <cstdio>
 
 using namespace std;
 using namespace CppPractice;
@@ -21,6 +22,6 @@ private:
 int main()
 {
 	TraitsTestFunction<StringTraitsTester>(StringTraitsTester("123"));
-	system("pause");
-	return 0;
+    getchar();
+    return 0;
 }

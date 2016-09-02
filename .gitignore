@@ -1,5 +1,7 @@
 /Build
 
+*.user
+
 # Compiled Object files
 *.slo
 *.lo
