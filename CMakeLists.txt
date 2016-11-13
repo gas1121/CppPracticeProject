@@ -6,7 +6,8 @@ set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
 message("cxx Flags: " ${CMAKE_CXX_FLAGS})
 
-add_subdirectory(Core)
-add_subdirectory(Functional)
-add_subdirectory(TypeTraits)
-add_subdirectory(ThirdParty)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+add_subdirectory(CppPracticeProject)
