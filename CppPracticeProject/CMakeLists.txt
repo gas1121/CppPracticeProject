@@ -3,6 +3,7 @@ SET(EXE_NAME "CppPracticeProject")
 set (SOURCES
      "Src/main.cpp")
 set (Include 
+     "Include/Cpp11TMP.hpp"
      "Include/TypeTraits.hpp"
      "Include/TMPList.hpp")
 
