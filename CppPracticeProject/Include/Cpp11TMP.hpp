@@ -30,15 +30,13 @@ namespace CppPractice {
 	template<typename A, template<typename...> typename B>
 	using mp_rename = typename mp_rename_impl<A, B>::type;
 
-	template<typename L> struct mp_size_impl;
-	template<typename... T> 
-	struct mp_size_impl<mp_list<T...>>
-	{
-		using type = std::integral_constant<std::size_t, sizeof...(T)>;
-	};
-	template<typename L>
-	using mp_size = typename mp_size_impl<L>::type;
-	
+    template<typename... T> 
+    using mp_length = std::integral_constant<std::size_t, sizeof...(T)>;
+    template<typename L>
+    using mp_size = mp_rename<L, mp_length>;
+    template<template<typename...> typename F, typename L>
+    using mp_apply = mp_rename<L, F>;
+
 	void Cpp11TMPMain()
 	{
 		//static assert
